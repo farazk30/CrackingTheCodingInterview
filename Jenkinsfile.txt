@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('---clean---') {
+            steps {
+                echo 'Step01'
+            }
+        }
+        stage('--test--') {
+            steps {
+                echo 'Step02'
+            }
+        }
+        stage('--package--') {
+            steps {
+                echo 'Step03'
+            }
+        }
+    }
+}ddi
